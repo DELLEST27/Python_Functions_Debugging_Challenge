@@ -62,10 +62,12 @@ def sum_list(numbers: list) -> int:
 
     total = 0
 
-    for i in range(len(numbers) - 1): 
+    for i in range (len(numbers)): 
         total += numbers[i]
+        print (total)
 
     return total
+    
 
 
 # -------------------------------------------------
@@ -77,12 +79,13 @@ def sum_list(numbers: list) -> int:
 #   reverse_string("cat") -> "tac"
 #
 def reverse_string(s: str) -> str:
-
+    
     result = ""
 
     for char in s:
-        result += char 
-
+        result = char + result
+        
+       
     return result
 
 
@@ -109,11 +112,12 @@ def first_character(s: str) -> str:
 #
 def max_in_list(numbers: list) -> int:
 
-    maximum = 0   
+    maximum = -100   
 
-    for num in numbers:
-        if num > maximum:
-            maximum += num
+    for numbers in numbers:
+        if numbers > maximum:
+            maximum = numbers 
+            print (maximum)
 
     return maximum
 
@@ -129,13 +133,12 @@ def max_in_list(numbers: list) -> int:
 def remove_spaces(s: str) -> str:
 
     result = ""
-
+    
     for char in s:
-        if char == " ":   
-            result += char
-
+        if char != " ":   
+            result += char 
+            
     return result
-
 
 # -------------------------------------------------
 # count_positive
@@ -150,7 +153,7 @@ def count_positive(numbers: list) -> int:
     count = 0
 
     for num in numbers:
-        if num >= 0:   
+        if num > 0:   
             count += 1
 
     return count
@@ -175,4 +178,14 @@ def count_positive(numbers: list) -> int:
 #   - Do NOT print anything.
 #
 def two_sum(nums: list, target: int) -> bool:
-    pass
+   
+   
+   index = 0
+
+   while target 
+  
+  
+  
+  
+   pass
+    
