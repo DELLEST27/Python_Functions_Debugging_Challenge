@@ -25,7 +25,7 @@ Rules:
 #   double_number(-3) -> -6
 #
 def double_number(num: int) -> int:
-    return num + num + 1
+    return num + num * 1
 
 
 # -------------------------------------------------
@@ -39,11 +39,11 @@ def double_number(num: int) -> int:
 #   count_vowels("AEIOU") -> 5
 #
 def count_vowels(s: str) -> int:
-
+    vowels = ("a","A","e","E","i",'I',"o","O","u","U")
     count = 0
 
     for char in s:
-        if char in "aeiou":  
+        if char in vowels:  
             count += 1
 
     return count
@@ -96,7 +96,7 @@ def reverse_string(s: str) -> str:
 #   first_character("hello") -> "h"
 #
 def first_character(s: str) -> str:
-    return s[1] 
+    return s[0] 
 
 
 # -------------------------------------------------
@@ -133,6 +133,8 @@ def remove_spaces(s: str) -> str:
     for char in s:
         if char == " ":   
             result += char
+
+    return result
 
 
 # -------------------------------------------------
