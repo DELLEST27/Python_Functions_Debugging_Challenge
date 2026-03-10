@@ -38,11 +38,11 @@ def double_number(num: int) -> int:
 #   count_vowels("hello") -> 2
 #   count_vowels("AEIOU") -> 5
 #
-def count_vowels(s: str) -> int:
+def count_vowels(s: str) -> int: #didn't need to make a whole list
     vowels = ("a","A","e","E","i",'I',"o","O","u","U")
     count = 0
 
-    for char in s:
+    for char in s:    #char.lower()
         if char in vowels:  
             count += 1
 
@@ -58,7 +58,7 @@ def count_vowels(s: str) -> int:
 #   sum_list([1,2,3]) -> 6
 #   sum_list([]) -> 0
 #
-def sum_list(numbers: list) -> int:
+def sum_list(numbers: list) -> int: 
 
     total = 0
 
@@ -83,7 +83,7 @@ def reverse_string(s: str) -> str:
     result = ""
 
     for char in s:
-        result = char + result
+        result = char + result ##result += char doesn't do what we want 
         
        
     return result
@@ -112,7 +112,7 @@ def first_character(s: str) -> str:
 #
 def max_in_list(numbers: list) -> int:
 
-    maximum = -100   
+    maximum = numbers[0]  # or infinity
 
     for numbers in numbers:
         if numbers > maximum:
